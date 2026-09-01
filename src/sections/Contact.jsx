@@ -97,7 +97,7 @@ export default function Contact() {
         </div>
 
         <p className="mt-20 text-center font-mono text-[11px] text-faint">
-          Deepak.dev — designed &amp; built by Sri Deepak Bolisetti
+          Designed &amp; built by Sri Deepak Bolisetti
         </p>
       </div>
     </section>

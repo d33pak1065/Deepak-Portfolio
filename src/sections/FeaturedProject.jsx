@@ -55,13 +55,15 @@ export default function FeaturedProject() {
             className="flex flex-col justify-center"
           >
             <div className="mb-4 flex flex-wrap items-center gap-3">
-              <ImageWithFallback
-                src={sendra.icon}
-                alt="Sendra app icon"
-                aspect="aspect-square"
-                rounded="rounded-xl"
-                className="h-10 w-10 shrink-0 sm:h-12 sm:w-12"
-              />
+              <div className="h-10 w-10 shrink-0 overflow-hidden rounded-xl border border-border bg-surface2 sm:h-12 sm:w-12">
+                <img
+                  src={sendra.icon}
+                  alt="Sendra app icon"
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
               <h3 className="font-display text-3xl font-semibold text-ink sm:text-4xl">
                 {sendra.name}
               </h3>
