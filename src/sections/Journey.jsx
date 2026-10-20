@@ -17,18 +17,17 @@ export default function Journey() {
             className="mt-8 max-w-md space-y-4 text-sm leading-relaxed text-muted"
           >
             <p>
-              I started my software career after completing my B.Tech in
-              Mechanical Engineering, moving into software development with a
-              focus on building practical web and mobile applications.
+              After completing my B.Tech in Mechanical Engineering, I began my
+              software development career at ITqHUB, working on practical
+              applications and learning how software is built and delivered.
             </p>
 
             <p>
-              I began with full-stack web development and gradually moved
-              deeper into Flutter and mobile application development. Along
-              the way, I took on API integration, Firebase services,
-              databases, testing, deployment, client coordination, and
-              post-release development — giving me experience across the path
-              from requirements to production.
+              I started with full-stack web development and later expanded into
+              Flutter mobile development. My experience includes building
+              application features, integrating REST APIs and Firebase services,
+              deploying applications, and maintaining production software in
+              collaboration with clients and development teams.
             </p>
           </motion.div>
         </div>
@@ -46,9 +45,7 @@ export default function Journey() {
               >
                 <span
                   className={`absolute -left-[2.3rem] top-1 h-2.5 w-2.5 rounded-full ${
-                    i === journey.length - 1
-                      ? "bg-accent"
-                      : "bg-borderStrong"
+                    i === journey.length - 1 ? "bg-accent" : "bg-borderStrong"
                   }`}
                 />
 
@@ -64,8 +61,8 @@ export default function Journey() {
 
                 <p className="mt-3 max-w-lg text-sm leading-relaxed text-muted">
                   {i === 0
-                    ? "Started my software development career working across React, Node.js, Express.js and databases, contributing to internal web applications and learning the full development lifecycle from requirements to deployment."
-                    : "Expanded into mobile development with Flutter while continuing full-stack web work. Built and maintained production applications, integrated APIs and Firebase services, handled testing and deployment, and collaborated with clients and development teams on requirements and delivery."}
+                    ? "Started my software development career as a Full Stack Developer Intern, contributing to web applications using React, Node.js, Express.js, and databases while learning the development lifecycle from requirements to deployment."
+                    : "Expanded into Flutter and mobile application development while continuing full-stack web development. Built and maintained production applications, integrated REST APIs and Firebase services, managed Android and iOS releases, and worked with clients and development teams on requirements and delivery."}
                 </p>
               </motion.li>
             ))}

@@ -12,7 +12,7 @@ export default function HowIBuild() {
         <SectionHeading
           eyebrow="Process"
           title="How I build"
-          description="From understanding product requirements and user flows to building, integrating, testing, and shipping production-ready applications, I focus on writing maintainable software that works reliably in real-world use."
+          description="My workflow covers the full mobile development lifecycle—from understanding requirements and building Flutter features to integrating APIs and Firebase, preparing Android and iOS releases, and improving applications after launch."
         />
 
         <p className="mt-3 max-w-3xl font-mono text-[10px] uppercase tracking-[0.12em] text-faint">

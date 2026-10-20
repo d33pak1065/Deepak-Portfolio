@@ -2,8 +2,8 @@ export const sendra = {
   name: "Sendra",
   tagline: "Ride Sharing & Parcel Delivery",
   description:
-    "Developed and maintained the complete Flutter application for Sendra, a ride-sharing and parcel delivery platform, using Clean Architecture and BLoC. Developed core ride, parcel, chat, KYC and profile flows, integrated REST APIs and Firebase services, and managed Android/iOS production releases and post-release improvements.",
-  role: "Primary Flutter developer responsible for the complete mobile application — from feature development and UI implementation through API/Firebase integration, testing, bug fixing, and Android/iOS production deployment.",
+    "Served as the primary Flutter developer for Sendra, a ride-sharing and parcel-delivery application. Developed and maintained 50+ production screens using Flutter, Dart, BLoC, and Clean Architecture. Implemented core ride, parcel, chat, KYC, and profile flows, integrated REST APIs and Firebase services, and managed Android and iOS production releases and post-release improvements.",
+  role: "Primary Flutter developer responsible for mobile feature development, UI implementation, BLoC state management, REST API and Firebase integration, testing, bug fixing, and Android/iOS production releases. Collaborated with backend developers on API integration and continued post-release maintenance and feature enhancements.",
   screens: "50+ screens",
   icon: "/assets/sendra/sendra-icon.png",
   video: "/assets/sendra/sendra-demo.mp4",
@@ -22,19 +22,18 @@ export const sendra = {
   ],
   platforms: ["Android", "iOS"],
   responsibilities: [
-    "Complete Flutter application development",
-    "Application architecture",
+    "Primary Flutter development",
+    "Clean Architecture implementation",
     "BLoC state management",
     "REST API integration",
     "Firebase Authentication",
     "Firebase Cloud Messaging",
     "Firebase Crashlytics",
     "Google Maps integration",
-    "Backend/API collaboration (Node.js) where required",
-    "Testing",
-    "Bug fixing",
+    "Backend developer collaboration",
+    "Testing and bug fixing",
     "Feature enhancements",
-    "Production deployment",
+    "Android and iOS production releases",
     "Post-release maintenance",
   ],
   context:
@@ -85,7 +84,8 @@ export const sendra = {
   ],
 
   stores: {
-    googlePlay: "https://play.google.com/store/apps/details?id=com.sendrapp.ride_parcel",
+    googlePlay:
+      "https://play.google.com/store/apps/details?id=com.sendrapp.ride_parcel",
     appStore: "https://apps.apple.com/in/app/sendra/id6791524084",
   },
 };
@@ -95,8 +95,7 @@ export const otherProjects = [
     rank: "02",
     name: "EV Mart Plus",
     tagline: "EV Products & Services — Android App",
-    role:
-      "Developed assigned Flutter screens and UI flows for an EV products and services application, integrating Firebase and working closely with the development team on feature implementation. Coordinated client meetings, gathered requirements, documented discussions through MOMs, and helped translate requirements into actionable development tasks.",
+    role: "Developed assigned Flutter screens and UI flows for an EV products and services application, integrating Firebase and working closely with the development team on feature implementation. Coordinated client meetings, gathered requirements, documented discussions through MOMs, and helped translate requirements into actionable development tasks.",
     tech: ["Flutter", "Firebase"],
     platforms: ["Android"],
     storeUrl:
@@ -106,19 +105,17 @@ export const otherProjects = [
   },
   {
     rank: "03",
-    name: "Employee Attendance & Management Portal",
+    name: "ITqHUB Employee Management & Attendance Portal",
     tagline: "Internal ITqHUB — Full-Stack Web Application",
-    role:
-      "Independently built the complete employee management and attendance platform using React, Node.js, Express.js and MySQL. Implemented JWT-based role access for Admin, HR and Employees, Wi-Fi/IP-restricted attendance, leave management, dashboards, reports, notifications and search/filtering, then deployed and maintained the application on Hostinger VPS.",
+    role: "Independently built the complete employee management and attendance platform using React, Node.js, Express.js and MySQL. Implemented JWT-based role access for Admin, HR and Employees, Wi-Fi/IP-restricted attendance, leave management, dashboards, reports, notifications and search/filtering, then deployed and maintained the application on Hostinger VPS.",
     tech: ["React.js", "Node.js", "Express.js", "MySQL", "JWT"],
     platforms: ["Web"],
   },
   {
     rank: "04",
-    name: "Student Fee & Payment Management Platform",
+    name: "ITqHUB Student Fee & Payment Management Platform",
     tagline: "Internal ITqHUB — Full-Stack Payment Platform",
-    role:
-      "Independently built the complete student fee and payment platform using React, Node.js, Express.js and MongoDB. Implemented JWT-based Admin and Employee access, student payment requests, Razorpay payment links, payment status tracking, transaction history, search/filtering and reporting, then deployed and maintained the application on Hostinger VPS.",
+    role: "Independently built the complete student fee and payment platform using React, Node.js, Express.js and MongoDB. Implemented JWT-based Admin and Employee access, student payment requests, Razorpay payment links, payment status tracking, transaction history, search/filtering and reporting, then deployed and maintained the application on Hostinger VPS.",
     tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Razorpay"],
     platforms: ["Web"],
   },

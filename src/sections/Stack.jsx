@@ -15,7 +15,7 @@ const tierStyles = {
   },
   supporting: {
     card: "border-border bg-surface/60 p-6 hover:border-borderStrong",
-    label: "text-faint",
+    label: "text-muted",
     chip: "border-border bg-surface2 text-muted text-xs px-2.5 py-1",
   },
 };
@@ -30,7 +30,7 @@ export default function Stack() {
         <SectionHeading
           eyebrow="Stack"
           title="Tools I build with"
-          description="A practical stack across mobile and full-stack web development, from application architecture and APIs to databases, integrations, and production delivery."
+          description="Flutter and Dart are my primary mobile development tools, supported by BLoC, Clean Architecture, Firebase, and REST APIs. I also have hands-on experience with React, Node.js, databases, and web application deployment."
         />
 
         <div className="mt-12 space-y-5">
@@ -44,13 +44,18 @@ export default function Stack() {
             >
               <div className="mb-1 flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                <p className={`font-mono text-xs uppercase tracking-[0.14em] ${tierStyles.primary.label}`}>
+                <p
+                  className={`font-mono text-xs uppercase tracking-[0.14em] ${tierStyles.primary.label}`}
+                >
                   {primary.label} — primary
                 </p>
               </div>
               <div className="mt-4 flex flex-wrap gap-2.5">
                 {primary.items.map((item) => (
-                  <span key={item} className={`rounded-full border ${tierStyles.primary.chip}`}>
+                  <span
+                    key={item}
+                    className={`rounded-full border ${tierStyles.primary.chip}`}
+                  >
                     {item}
                   </span>
                 ))}
@@ -69,15 +74,22 @@ export default function Stack() {
                   viewport={{ once: true, margin: "-60px" }}
                   transition={{ duration: 0.5, delay: i * 0.05 }}
                   className={`rounded-xl2 border transition-colors duration-200 ${style.card} ${
-                    cat.tier === "secondary" ? "sm:col-span-2 lg:col-span-1" : ""
+                    cat.tier === "secondary"
+                      ? "sm:col-span-2 lg:col-span-1"
+                      : ""
                   }`}
                 >
-                  <p className={`mb-4 font-mono text-[11px] uppercase tracking-[0.14em] ${style.label}`}>
+                  <p
+                    className={`mb-4 font-mono text-[11px] uppercase tracking-[0.14em] ${style.label}`}
+                  >
                     {cat.label}
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {cat.items.map((item) => (
-                      <span key={item} className={`rounded-full border ${style.chip}`}>
+                      <span
+                        key={item}
+                        className={`rounded-full border ${style.chip}`}
+                      >
                         {item}
                       </span>
                     ))}

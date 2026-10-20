@@ -39,10 +39,10 @@ export default function Contact() {
           </h2>
 
           <p className="mx-auto mt-5 max-w-md text-[15px] leading-relaxed text-muted">
-            I'm open to Software Engineer and Full Stack Developer
-            opportunities, with a focus on building mobile and full-stack
-            applications.
-          </p>
+  I'm open to Flutter Developer and Mobile Application Developer
+  opportunities, focused on building and shipping production mobile
+  applications for Android and iOS.
+</p>
 
           <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
             <Button

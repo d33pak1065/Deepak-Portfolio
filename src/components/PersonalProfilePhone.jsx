@@ -17,7 +17,7 @@ function StatusDot() {
   return (
     <span className="inline-flex items-center gap-1.5">
       <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-      Associate Developer
+      Flutter Developer
     </span>
   );
 }
@@ -308,11 +308,11 @@ export default function PersonalProfilePhone() {
           </p>
 
           <p className="text-[12px] font-semibold leading-tight text-ink">
-            Production Mobile &amp; Web Apps
+            Production Mobile Applications
           </p>
 
           <p className="mt-1 text-[8px] leading-relaxed text-muted">
-            From UI and APIs to testing and deployment.
+            Flutter, APIs, Firebase, and production releases.
           </p>
         </section>
 

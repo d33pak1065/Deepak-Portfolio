@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import Button from "../components/Button";
 import StatusBadge from "../components/StatusBadge";
@@ -10,8 +11,8 @@ const proof = [
   "Production Deployment",
 ];
 
-// Small helper so the proof strip can render twice (once for the mobile/
-// tablet flow, once for the desktop column) without duplicating markup.
+// Small helper so the proof strip can render twice without
+// duplicating markup.
 function ProofStrip({ className = "" }) {
   return (
     <div
@@ -35,7 +36,7 @@ export default function Hero() {
       id="top"
       className="relative overflow-hidden pb-16 pt-28 sm:pb-20 sm:pt-36 lg:pb-28 lg:pt-40"
     >
-      {/* ambient grid, kept subtle */}
+      {/* Ambient grid */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 opacity-[0.05]"
@@ -48,13 +49,8 @@ export default function Hero() {
         }}
       />
 
-      {/*
-        Two-column desktop layout only kicks in at `xl` (1280px). Below that
-        (including 1024px tablet widths) the hero stays single-column so the
-        1024px range doesn't feel cramped.
-      */}
       <div className="container-x relative grid grid-cols-1 items-center gap-12 xl:grid-cols-[1.1fr_0.9fr] xl:gap-10">
-        {/* text column */}
+        {/* Text column */}
         <div>
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -63,7 +59,7 @@ export default function Hero() {
             className="mb-4 flex flex-wrap items-center gap-x-3 gap-y-2"
           >
             <StatusBadge>
-              Open to Software Engineering opportunities
+              Open to Flutter / Mobile Development opportunities
             </StatusBadge>
           </motion.div>
 
@@ -73,7 +69,8 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.04 }}
             className="mb-3 font-mono text-xs uppercase tracking-[0.12em] text-faint"
           >
-            Sri Deepak Bolisetti <span className="text-borderStrong">·</span>{" "}
+            Sri Deepak Bolisetti{" "}
+            <span className="text-borderStrong">·</span>{" "}
             Associate Developer
           </motion.p>
 
@@ -83,7 +80,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.08 }}
             className="font-display text-[clamp(2.25rem,5.5vw,3.75rem)] font-semibold leading-[1.06] tracking-tight text-ink"
           >
-            I build applications that make it to production.
+            I build Flutter applications that make it to production.
           </motion.h1>
 
           <motion.p
@@ -92,9 +89,10 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.16 }}
             className="mt-5 max-w-xl text-[15px] leading-relaxed text-muted sm:text-base"
           >
-            Flutter-first developer with hands-on experience building mobile and
-            web applications, integrating APIs and Firebase, and taking products
-            through production deployment.
+            Flutter Developer with 2 years of software development experience,
+            building and deploying production mobile applications with Flutter
+            and Dart. Primary Flutter developer for Sendra, with 50+ production
+            screens across Android and iOS.
           </motion.p>
 
           <motion.p
@@ -103,9 +101,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-4 font-mono text-xs uppercase tracking-[0.14em] text-faint"
           >
-            Flutter <span className="text-borderStrong">•</span> Firebase{" "}
-            <span className="text-borderStrong">•</span> React{" "}
-            <span className="text-borderStrong">•</span> Node.js{" "}
+            Flutter <span className="text-borderStrong">•</span> Dart{" "}
+            <span className="text-borderStrong">•</span> BLoC{" "}
+            <span className="text-borderStrong">•</span> Firebase{" "}
             <span className="text-borderStrong">•</span> REST APIs
           </motion.p>
 
@@ -118,6 +116,7 @@ export default function Hero() {
             <Button href="#work" variant="primary">
               View my work
             </Button>
+
             <Button
               href="/resume.pdf"
               variant="secondary"
@@ -128,7 +127,7 @@ export default function Hero() {
             </Button>
           </motion.div>
 
-          {/* proof strip — desktop position, inside the text column */}
+          {/* Proof strip — desktop */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -140,19 +139,20 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* phone column — on mobile/tablet this appears after the buttons
-            above (source order), on desktop it sits in the right column */}
+        {/* Phone column */}
         <div className="relative">
           <div
             aria-hidden
             className="absolute left-1/2 top-1/2 -z-10 h-[340px] w-[340px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/[0.07] blur-[100px]"
           />
+
           <PersonalProfilePhone />
+
           <p className="mt-5 text-center font-mono text-[10px] uppercase tracking-[0.16em] text-faint">
             Personal Profile
           </p>
 
-          {/* proof strip — mobile/tablet position, right after the phone */}
+          {/* Proof strip — mobile/tablet */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
